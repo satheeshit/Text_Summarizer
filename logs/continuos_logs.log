@@ -1,0 +1,38 @@
+[2025-04-27 13:46:59,070: INFO: main: logging is implemented]
+[2025-05-11 14:25:57,354: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-11 14:25:58,017: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-11 14:25:58,170: INFO: common: created directory at: artifacts]
+[2025-05-11 14:27:28,572: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-11 14:27:28,593: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-11 14:27:28,631: INFO: common: created directory at: artifacts]
+[2025-05-11 14:27:28,672: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-11 14:36:17,689: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-05-11 14:36:18,222: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-05-11 14:36:18,624: INFO: common: created directory at: artifacts]
+[2025-05-11 14:36:18,624: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-05-11 14:36:33,580: INFO: 2783158359: File is Downloaded]
+[2025-05-13 08:50:28,220: INFO: main: stage Data Ingestion stage initiated]
+[2025-05-13 08:50:28,362: INFO: common: YAML file loaded successfully: config\config.yaml]
+[2025-05-13 08:50:28,448: INFO: common: YAML file loaded successfully: params.yaml]
+[2025-05-13 08:50:28,537: ERROR: main: Subscripted generics cannot be used with class and instance checks]
+Traceback (most recent call last):
+  File "D:\Text_Summarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiative_data_ingestion()
+  File "D:\Text_Summarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 11, in initiative_data_ingestion
+    config=ConfigurationManager()
+  File "D:\Text_Summarizer\src\textSummarizer\config\configuration.py", line 12, in __init__
+    create_directories([self.config.artifacts_root])
+  File "D:\Text_Summarizer\venv\lib\site-packages\ensure\main.py", line 831, in __call__
+    if not isinstance(value, templ):
+  File "C:\Users\ELCOT\AppData\Local\Programs\Python\Python39\lib\typing.py", line 710, in __instancecheck__
+    return self.__subclasscheck__(type(obj))
+  File "C:\Users\ELCOT\AppData\Local\Programs\Python\Python39\lib\typing.py", line 713, in __subclasscheck__
+    raise TypeError("Subscripted generics cannot be used with"
+TypeError: Subscripted generics cannot be used with class and instance checks
+[2025-05-13 09:19:36,872: INFO: main: stage Data Ingestion stage initiated]
+[2025-05-13 09:19:36,919: INFO: common: YAML file loaded successfully: config\config.yaml]
+[2025-05-13 09:19:37,141: INFO: common: YAML file loaded successfully: params.yaml]
+[2025-05-13 09:19:37,456: INFO: common: Created directory at: artifacts]
+[2025-05-13 09:19:37,458: INFO: common: Created directory at: artifacts/data_ingestion]
+[2025-05-13 09:19:45,163: INFO: data_ingestion: File is Downloaded]
+[2025-05-13 09:19:47,227: INFO: main: stage Data Ingestion stage Completed]
